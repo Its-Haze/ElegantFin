@@ -1,0 +1,32 @@
+/* ElegantFin - Haze's custom build
+ * Base theme by lscambo13
+ * Customizations by Haze
+ */
+
+@import url("./ElegantFin-theme-nightly.css");
+
+/* ─── Detail page: Genres/Studio/Writer info block ─── */
+
+/* Align label and value to the left instead of space-between */
+.detailsGroupItem {
+    justify-content: flex-start !important;
+    gap: 8px !important;
+}
+
+/* Remove fixed label width so it only takes up what it needs */
+.detailsGroupItem .label {
+    min-width: unset !important;
+    width: auto !important;
+}
+
+/* Constrain the whole info block to its content width with breathing room */
+.itemDetailsGroup {
+    max-width: fit-content !important;
+    min-width: unset !important;
+    padding-right: 3em !important;
+}
+
+/* Prevent genre list from wrapping to a second line */
+.detailsGroupItem .content {
+    white-space: nowrap !important;
+}
