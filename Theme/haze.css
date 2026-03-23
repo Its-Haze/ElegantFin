@@ -30,3 +30,8 @@
 .detailsGroupItem .content {
     white-space: nowrap !important;
 }
+
+/* Hide the info block entirely if all items are empty */
+.itemDetailsGroup:not(:has(.detailsGroupItem:not(.hide))) {
+    display: none !important;
+}
